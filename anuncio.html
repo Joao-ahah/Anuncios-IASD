@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala de Cultos - IASD Central de Russas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .slide-in {
+            animation: slideIn 1s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .service-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12 fade-in">
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    ⛪ IASD Central de Russas
+                </h1>
+                <p class="text-xl text-white/90 font-medium">Escala de Cultos - Agosto 2025</p>
+                <div class="mt-4 inline-block bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold pulse-animation">
+                    📅 Programação Atualizada
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- Domingo -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover slide-in">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold">DOMINGO</h2>
+                            <p class="text-blue-100">17 de Agosto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-blue-600" viewBox="0 0 24 24">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 10.1 15.9 11 17 11V20C17 21.1 16.1 22 15 22H9C7.9 22 7 21.1 7 20V11C8.1 11 9 10.1 9 9V7H3V9C3 10.1 3.9 11 5 11V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V11C20.1 11 21 10.1 21 9Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Recepção</p>
+                            <p class="text-gray-600">Paloma e Acelino</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-green-600" viewBox="0 0 24 24">
+                                <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Louvores</p>
+                            <p class="text-gray-600">Lara e Iago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-purple-600" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Abertura de Culto</p>
+                            <p class="text-gray-600">Rômulo e Ellen</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border-l-4 border-orange-400">
+                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-orange-600" viewBox="0 0 24 24">
+                                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 19V5H19V19H5ZM17 12H15.5V17H13.5V12H12V10.5H17V12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">Pregação</p>
+                            <p class="text-orange-600 font-semibold">Otaviano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarta-feira -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover slide-in" style="animation-delay: 0.2s;">
+                <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold">QUARTA</h2>
+                            <p class="text-green-100">20 de Agosto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-blue-600" viewBox="0 0 24 24">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 10.1 15.9 11 17 11V20C17 21.1 16.1 22 15 22H9C7.9 22 7 21.1 7 20V11C8.1 11 9 10.1 9 9V7H3V9C3 10.1 3.9 11 5 11V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V11C20.1 11 21 10.1 21 9Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Recepção</p>
+                            <p class="text-gray-600">Natália e Antônio</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-green-600" viewBox="0 0 24 24">
+                                <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Louvores</p>
+                            <p class="text-gray-600">De Assis e Aline</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-purple-600" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Abertura de Culto</p>
+                            <p class="text-gray-600">Alberto e Patrícia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border-l-4 border-orange-400">
+                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-orange-600" viewBox="0 0 24 24">
+                                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 19V5H19V19H5ZM17 12H15.5V17H13.5V12H12V10.5H17V12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">Pregação</p>
+                            <p class="text-orange-600 font-semibold">Elias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sábado -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover slide-in" style="animation-delay: 0.4s;">
+                <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold">SÁBADO</h2>
+                            <p class="text-purple-100">23 de Agosto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-blue-600" viewBox="0 0 24 24">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 10.1 15.9 11 17 11V20C17 21.1 16.1 22 15 22H9C7.9 22 7 21.1 7 20V11C8.1 11 9 10.1 9 9V7H3V9C3 10.1 3.9 11 5 11V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V11C20.1 11 21 10.1 21 9Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Recepção</p>
+                            <p class="text-gray-600">Luciana e Lucenir</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-green-600" viewBox="0 0 24 24">
+                                <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Louvores</p>
+                            <p class="text-gray-600">Mariana, Caio e Kethely</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl border-l-4 border-yellow-400">
+                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center">
+                            <div class="text-yellow-600 text-lg">🎓</div>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Escola Sabatina</p>
+                            <p class="text-yellow-600 font-semibold">Ministério da Mulher</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-indigo-600" viewBox="0 0 24 24">
+                                <path d="M16 4C16.55 4 17 4.45 17 5V9.5L20.5 13L19.09 14.41L15 10.33V5C15 4.45 15.45 4 16 4ZM12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Diáconos/Diaconisas</p>
+                            <p class="text-gray-600">De Assis e Eliete</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                        <div class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-teal-600" viewBox="0 0 24 24">
+                                <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Plataforma</p>
+                            <p class="text-gray-600">Lara e Tamires</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 p-3 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border-l-4 border-orange-400">
+                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="service-icon text-orange-600" viewBox="0 0 24 24">
+                                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 19V5H19V19H5ZM17 12H15.5V17H13.5V12H12V10.5H17V12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">Pregação</p>
+                            <p class="text-orange-600 font-semibold">Quebrando Silêncio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center fade-in">
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                <p class="text-white/90 text-lg mb-2">
+                    🙏 "Vinde, adoremos e prostremo-nos; ajoelhemos diante do Senhor, que nos criou."
+                </p>
+                <p class="text-white/70">Salmos 95:6</p>
+                <div class="mt-4 flex justify-center space-x-4">
+                    <div class="bg-white/20 px-4 py-2 rounded-full text-white text-sm">
+                        📍 IASD Central de Russas
+                    </div>
+                    <div class="bg-white/20 px-4 py-2 rounded-full text-white text-sm">
+                        📅 Agosto 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adiciona interatividade aos cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+            // Animação de entrada sequencial
+            const elements = document.querySelectorAll('.slide-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateX(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9700fc230619f634',t:'MTc1NTM0Nzg2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
